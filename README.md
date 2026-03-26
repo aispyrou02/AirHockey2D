@@ -3,7 +3,7 @@
 A 2-player Air Hockey game built in C++ with the SGG graphics framework.
 This project focuses on real-time game logic, collision detection, scoring, and object-oriented design.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Features
 
@@ -13,7 +13,7 @@ This project focuses on real-time game logic, collision detection, scoring, and 
 * Game state management
 * End-game screen when a player reaches 5 points
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Controls
 
@@ -31,7 +31,7 @@ This project focuses on real-time game logic, collision detection, scoring, and 
 * `←` → Left
 * `→` → Right
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Tech Stack
 
@@ -39,11 +39,11 @@ This project focuses on real-time game logic, collision detection, scoring, and 
 * Visual Studio
 * SGG Graphics Library
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Project Structure
 
-
+```text
 AirHockey2D/
 │
 ├── include/
@@ -79,9 +79,9 @@ AirHockey2D/
 ├── main.cpp
 ├── Project1.sln
 └── README.md
+```
 
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Requirements
 
@@ -92,8 +92,9 @@ You need:
 * SGG header files inside `include/sgg/`
 * SGG library files inside `lib/`
 * Required runtime `.dll` files inside `bin/`
+* The `assets` folder inside `bin/`
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Setup Instructions
 
@@ -101,8 +102,9 @@ You need:
 
 Place the SGG header files in:
 
-
+```text
 include/sgg/
+```
 
 Example:
 
@@ -113,7 +115,9 @@ Example:
 
 Create a folder named:
 
+```text
 lib/
+```
 
 Place the SGG library files there:
 
@@ -124,7 +128,9 @@ Place the SGG library files there:
 
 Place all required runtime `.dll` files in:
 
+```text
 bin/
+```
 
 Examples may include:
 
@@ -132,12 +138,21 @@ Examples may include:
 * `SDL2_mixer.dll`
 * `freetype.dll`
 
+### 4. Assets
 
-### 4. SGG main/source file
+Place the game assets in:
+
+```text
+bin/assets/
+```
+
+This folder should contain the textures, images, and font files used by the game.
+
+### 5. SGG main/source file
 
 If your SGG setup includes an additional source file such as an SGG main file, add it to the Visual Studio project as required by your framework setup.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Visual Studio Configuration
 
@@ -147,27 +162,35 @@ Open `Project1.sln` in Visual Studio and make sure the project is configured cor
 
 Add:
 
+```text
 include/
+```
 
 ### Library Directories
 
 Add:
 
+```text
 lib/
+```
 
 ### Working Directory
 
 Set the working directory to:
 
+```text
 $(ProjectDir)bin
+```
 
 This is necessary so the game can correctly find:
 
+```text
 assets\
+```
 
 and the required `.dll` files at runtime.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Build and Run
 
@@ -177,7 +200,7 @@ and the required `.dll` files at runtime.
 
 If everything is configured correctly, the game should launch normally.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Notes
 
@@ -185,7 +208,7 @@ If everything is configured correctly, the game should launch normally.
 * The required framework files should be added locally as described above.
 * This project was developed for educational purposes and uses an external graphics framework.
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Future Improvements
 
@@ -195,13 +218,13 @@ If everything is configured correctly, the game should launch normally.
 * Improve collision and puck physics
 * Refactor project structure into `src/` and `include/`
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## Author
 
-Spyrou Agamemnon-Ioannis
+Your Name
 
---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## License
 
