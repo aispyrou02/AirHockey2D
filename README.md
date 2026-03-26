@@ -138,17 +138,8 @@ Examples may include:
 * `SDL2_mixer.dll`
 * `freetype.dll`
 
-### 4. Assets
 
-Place the game assets in:
-
-```text
-bin/assets/
-```
-
-This folder should contain the textures, images, and font files used by the game.
-
-### 5. SGG main/source file
+### 4. SGG main/source file
 
 If your SGG setup includes an additional source file such as an SGG main file, add it to the Visual Studio project as required by your framework setup.
 
@@ -222,7 +213,7 @@ If everything is configured correctly, the game should launch normally.
 
 ## Author
 
-Your Name
+Spyrou Agamemnon-Ioannis
 
 ---
 
